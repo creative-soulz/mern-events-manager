@@ -10,6 +10,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
+      external: ['@heroicons/react'],
       external: ['@material-tailwind/react'],
     },
   },
