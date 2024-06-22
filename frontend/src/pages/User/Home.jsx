@@ -3,10 +3,10 @@ import pngs1 from "../../Asserts/pngs1.png";
 import pngs2 from "../../Asserts/pngs2.png";
  import pngs3 from "../../Asserts/pngs3.png";
  import pngs4 from "../../Asserts/pngs4.png";
- import image2 from "../../Asserts/image2.jpg";
+
  import { Link } from 'react-router-dom';
 import Highscore from "./HighScore";
-import UpCommingEvent from './UpCommingEvent';
+
 
 function Home() {
   const [images, setImages] = useState([pngs1, pngs2,pngs3,pngs4]); // Add more images as needed
