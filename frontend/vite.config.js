@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'build',
+    output: 'build',
     rollupOptions: {
       external: ['@heroicons/react'],
     },
