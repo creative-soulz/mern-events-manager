@@ -7,6 +7,7 @@ import { createBrowserRouter } from "react-router-dom";
 import store from "./redux/store.js";
 import { ThemeProvider } from "@material-tailwind/react";
 
+
 import PrivateRoute from "./components/PrivateRoute";
 //Auth
 import Login from "./pages/User/Login.jsx";
