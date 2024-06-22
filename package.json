@@ -1,14 +1,19 @@
 {
+  "homepage": "https://creative-soulz.github.io/mern-events-manager",
+
   "name": "neg3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "backend": "nodemon backend/index.js",
-    "frontend": "npm run dev --prefix frontend",
-    "dev": "concurrently \"npm run forntend\" \"npm run backend\""
-  },
+  "predeploy": "npm run build --prefix frontend",
+  "build": "npm run build --prefix frontend",
+  "deploy": "gh-pages -d frontend/build",
+  "backend": "nodemon backend/index.js",
+  "frontend": "npm run dev --prefix frontend",
+  "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -30,5 +35,8 @@
     "multer": "^1.4.5-lts.1",
     "nodemon": "^3.0.2",
     "react-responsive-carousel": "^3.2.23"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
