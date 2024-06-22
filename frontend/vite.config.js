@@ -8,9 +8,14 @@ export default defineConfig({
     proxy: { "/api/": "http://localhost:5000" },
 
   },
+  resolve: {
+    alias: {
+      '@heroicons/react': require.resolve('@heroicons/react')
+    }
+  },
   build: {
     rollupOptions: {
-      external: ['@heroicons/react','@material-tailwind/react'],
+      external: ['@heroicons/react'],
     },
   },
 });
