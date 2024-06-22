@@ -6,11 +6,10 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: { "/api/": "http://localhost:5000" },
-
   },
   resolve: {
     alias: {
-      '@heroicons/react': require.resolve('@heroicons/react')
+      '@heroicons/react': '/node_modules/@heroicons/react'
     }
   },
   build: {
