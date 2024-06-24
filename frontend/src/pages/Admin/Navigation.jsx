@@ -188,7 +188,7 @@ export default function SidebarWithBurgerMenu() {
               <ListItemPrefix>
                 <HomeIcon className="h-5 w-5" />
               </ListItemPrefix>
-              <Link to="/home">
+              <Link to="/">
               Home</Link>
 
                 

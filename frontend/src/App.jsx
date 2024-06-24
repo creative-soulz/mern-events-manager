@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import SidebarWithBurgerMenu from "./pages/Admin/Navigation";
 import Home from "./pages/User/Home";
-
+import Navbar from './pages/Auth/Navbar';
 import Footer from "./pages/User/Footer";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -28,8 +28,8 @@ const MainLayout = () => {
     
        
       
-     <Outlet/>
-      
+    
+      <Outlet></Outlet>
   
       <div className="fixed bottom-0 w-full">
         <Footer />
